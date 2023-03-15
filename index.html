@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <button id="toggle-nav"><h1>OLIVIER GPT</h1></button>
+    </header>
+    <nav>
+      <ul>
+        <li id="nav_new"><h2>+ NEW CHAT</h2></li>
+        <li><h2>HTML</h2></li>
+        <li><h2>CSS</h2></li>
+        <li><h2>JAVASCRIPT</h2></li>
+        <li><h2>REACT JS</h2></li>
+      </ul>
+    </nav>
+    <section>
+      <p class="bubble_gpt">
+        Demandez-moi tout ce que vous voulez, je suis là pour vous servir.
+      </p>
+      <p class="bubble_user">
+        Comment apprendre à coder ?
+      </p>
+      <p class="bubble_gpt">
+        Quelles sont les raisons pour lesquelles vous voulez apprendre à coder ?
+      </p>
+      <p class="bubble_user">
+        Je veux apprendre à créer des sites web avec HTML, CSS et JavaScript. Je
+        veux également pouvoir créer des interfaces utilisateur avancées avec
+        React JS et pouvoir créer mes propres serveurs et API avec Node et
+        Express JS.
+      </p>
+      <p class="bubble_gpt">
+        Voulez-vous également apprendre à créer des applications mobiles avec
+        React Native étant donné que la demande pour cette technologie est très
+        forte ?
+      </p>
+      <p class="bubble_user">Oui bien-sûr, je veux apprendre React Native.</p>
+      <p class="bubble_gpt">
+        Dans ce cas, je vous recommande fortement la chaîne Oriano -
+        Développement Web !
+      </p>
+      <p class="bubble_user">Merci beaucoup Olivier GPT !</p>
+      <p class="bubble_gpt">
+        Avec plaisir, revenez me voir dès que vous avez besoin d'aide.
+      </p>
+      <form>
+        <input type="text" name="" id="" placeholder="Parlez à Oriano GPT..." />
+        <input type="submit" value="✔" />
+      </form>
+    </section>
+    <script>
+      const btn = document.getElementById("toggle-nav");
+      const nav = document.getElementsByTagName("nav")[0];
+      nav.style.display = "none";
+      btn.onclick = () => {
+        nav.style.display = nav.style.display == "none" ? "block" : "none";
+      };
+    </script>
+  </body>
+</html>
